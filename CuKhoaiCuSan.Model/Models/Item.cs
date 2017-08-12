@@ -52,7 +52,7 @@ namespace CuKhoaiCuSan.Model.Models
 
         public decimal? TaxRate { get; set; }
 
-        public bool? Status { get; set; }
+        public bool Status { get; set; }
 
         public virtual ItemCategory ItemCategory { get; set; }
     }

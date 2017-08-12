@@ -3,7 +3,7 @@ using CuKhoaiCuSan.Model.Models;
 
 namespace CuKhoaiCuSan.Data.Repositoris
 {
-    public interface IItemCategoryRepository
+    public interface IItemCategoryRepository:IRepository<ItemCategory>
     {
     }
 
