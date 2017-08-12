@@ -1,7 +1,6 @@
 ﻿using CuKhoaiCuSan.Data.Infrastructure;
 using CuKhoaiCuSan.Data.Repositoris;
 using CuKhoaiCuSan.Model.Models;
-using System;
 using System.Collections.Generic;
 
 namespace CuKhoaiCuSan.Service
@@ -26,8 +25,9 @@ namespace CuKhoaiCuSan.Service
     public class ItemService : IItemService
     {
         private IItemRepository _itemRepository;
-        IUnitOfWork _unitOfWork;
-        public ItemService(IItemRepository itemRepository,IUnitOfWork unitOfWork)
+        private IUnitOfWork _unitOfWork;
+
+        public ItemService(IItemRepository itemRepository, IUnitOfWork unitOfWork)
         {
             this._itemRepository = itemRepository;
             this._unitOfWork = unitOfWork;

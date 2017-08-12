@@ -59,6 +59,26 @@
     <Compile Include="Migrations\201708120239133_editStatusFromItem.Designer.cs">
       <DependentUpon>201708120239133_editStatusFromItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708120317123_editForeiKeyItemID.cs" />
+    <Compile Include="Migrations\201708120317123_editForeiKeyItemID.Designer.cs">
+      <DependentUpon>201708120317123_editForeiKeyItemID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708120324023_editForeiKeyItemID02.cs" />
+    <Compile Include="Migrations\201708120324023_editForeiKeyItemID02.Designer.cs">
+      <DependentUpon>201708120324023_editForeiKeyItemID02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708120330531_editForeiKeyItemID03.cs" />
+    <Compile Include="Migrations\201708120330531_editForeiKeyItemID03.Designer.cs">
+      <DependentUpon>201708120330531_editForeiKeyItemID03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708120353192_editDatabase.cs" />
+    <Compile Include="Migrations\201708120353192_editDatabase.Designer.cs">
+      <DependentUpon>201708120353192_editDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708120413010_addStatusFromItemOption.cs" />
+    <Compile Include="Migrations\201708120413010_addStatusFromItemOption.Designer.cs">
+      <DependentUpon>201708120413010_addStatusFromItemOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bank.cs" />
     <Compile Include="Models\BankTransfer.cs" />
@@ -104,6 +124,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708120239133_editStatusFromItem.resx">
       <DependentUpon>201708120239133_editStatusFromItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120317123_editForeiKeyItemID.resx">
+      <DependentUpon>201708120317123_editForeiKeyItemID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120324023_editForeiKeyItemID02.resx">
+      <DependentUpon>201708120324023_editForeiKeyItemID02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120330531_editForeiKeyItemID03.resx">
+      <DependentUpon>201708120330531_editForeiKeyItemID03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120353192_editDatabase.resx">
+      <DependentUpon>201708120353192_editDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708120413010_addStatusFromItemOption.resx">
+      <DependentUpon>201708120413010_addStatusFromItemOption.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

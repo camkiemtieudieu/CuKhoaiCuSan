@@ -14,7 +14,7 @@ namespace CuKhoaiCuSan.Model.Models
         {
             Stock = new HashSet<Stock>();
         }
-
+        [Key]
         public Guid BranchID { get; set; }
 
         [StringLength(50)]

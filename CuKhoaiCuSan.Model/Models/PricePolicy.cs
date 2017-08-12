@@ -14,7 +14,7 @@ namespace CuKhoaiCuSan.Model.Models
         {
             ObjectCategory = new HashSet<ObjectCategory>();
         }
-
+        [Key]
         public Guid PricePolicyID { get; set; }
 
         [StringLength(50)]

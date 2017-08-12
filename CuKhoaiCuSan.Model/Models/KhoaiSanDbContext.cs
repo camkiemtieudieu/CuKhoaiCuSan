@@ -554,26 +554,6 @@ namespace CuKhoaiCuSan.Model.Models
                 .HasPrecision(18, 8);
 
             modelBuilder.Entity<StockTransferDetail>()
-                .Property(e => e.Quantity)
-                .HasPrecision(22, 8);
-
-            modelBuilder.Entity<StockTransferDetail>()
-                .Property(e => e.QuantityConvert)
-                .HasPrecision(22, 8);
-
-            modelBuilder.Entity<StockTransferDetail>()
-                .Property(e => e.UnitPrice)
-                .HasPrecision(19, 4);
-
-            modelBuilder.Entity<StockTransferDetail>()
-                .Property(e => e.UnitPriceConvert)
-                .HasPrecision(19, 4);
-
-            modelBuilder.Entity<StockTransferDetail>()
-                .Property(e => e.Amount)
-                .HasPrecision(19, 4);
-
-            modelBuilder.Entity<StockTransferDetail>()
                 .Property(e => e.ConvertRate)
                 .HasPrecision(22, 8);
         }

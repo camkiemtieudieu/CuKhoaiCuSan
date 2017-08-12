@@ -9,6 +9,7 @@ namespace CuKhoaiCuSan.Model.Models
     [Table("PublicInvoiceTypeDetail")]
     public partial class PublicInvoiceTypeDetail
     {
+        [Key]
         public Guid PublicInvoiceTypeDetailID { get; set; }
 
         public Guid PublicInvoiceTypeID { get; set; }

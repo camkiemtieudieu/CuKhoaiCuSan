@@ -9,6 +9,7 @@ namespace CuKhoaiCuSan.Model.Models
     [Table("Unit")]
     public partial class Unit
     {
+        [Key]
         public Guid Id { get; set; }
 
         [StringLength(150)]
@@ -19,6 +20,6 @@ namespace CuKhoaiCuSan.Model.Models
 
         public bool? Status { get; set; }
 
-        public Guid? ItemOptionID { get; set; }
+        public Guid ItemOptionID { get; set; }
     }
 }

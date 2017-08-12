@@ -4,11 +4,11 @@ namespace CuKhoaiCuSan.Model.Models
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     [Table("ItemOption")]
     public partial class ItemOption
     {
+        [Key]
         public Guid ID { get; set; }
 
         [StringLength(150)]
@@ -26,7 +26,7 @@ namespace CuKhoaiCuSan.Model.Models
         [Column(TypeName = "money")]
         public decimal? PurchasePrice { get; set; }
 
-        public Guid? ItemID { get; set; }
+        public Guid ItemID { get; set; }
 
         [StringLength(150)]
         public string Image1 { get; set; }
@@ -38,6 +38,10 @@ namespace CuKhoaiCuSan.Model.Models
         public string Image3 { get; set; }
 
         [StringLength(150)]
+
         public string Image4 { get; set; }
+
+        public virtual Item Item { get; set; }
+        public bool Status { get; set; }
     }
 }

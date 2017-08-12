@@ -9,6 +9,7 @@ namespace CuKhoaiCuSan.Model.Models
     [Table("ObjectKind")]
     public partial class ObjectKind
     {
+        [Key]
         public Guid ObjectKindID { get; set; }
 
         [StringLength(100)]

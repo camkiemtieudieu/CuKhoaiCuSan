@@ -14,7 +14,7 @@ namespace CuKhoaiCuSan.Model.Models
         {
             PublicInvoiceTypeDetail = new HashSet<PublicInvoiceTypeDetail>();
         }
-
+        [Key]
         public Guid PublicInvoiceTypeID { get; set; }
 
         public DateTime PublicDate { get; set; }

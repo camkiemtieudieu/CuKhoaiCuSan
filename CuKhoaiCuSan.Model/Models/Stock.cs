@@ -9,6 +9,7 @@ namespace CuKhoaiCuSan.Model.Models
     [Table("Stock")]
     public partial class Stock
     {
+        [Key]
         public Guid StockID { get; set; }
 
         [StringLength(150)]

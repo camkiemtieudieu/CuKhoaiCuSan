@@ -12,7 +12,7 @@ namespace CuKhoaiCuSan.Model.Models
         [Key]
         public Guid VoucherDetailID { get; set; }
 
-        public Guid? VoucherID { get; set; }
+        public Guid VoucherID { get; set; }
 
         [StringLength(50)]
         public string FromBankAccount { get; set; }

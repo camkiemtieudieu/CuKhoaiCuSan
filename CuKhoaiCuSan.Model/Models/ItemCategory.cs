@@ -15,6 +15,7 @@ namespace CuKhoaiCuSan.Model.Models
             Item = new HashSet<Item>();
         }
 
+        [Key]
         public Guid Id { get; set; }
 
         [StringLength(150)]

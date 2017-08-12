@@ -9,7 +9,8 @@ namespace CuKhoaiCuSan.Model.Models
     [Table("Item")]
     public partial class Item
     {
-        public Guid? ItemID { get; set; }
+        [Key]
+        public Guid ItemID { get; set; }
 
         [StringLength(15)]
         public string Barcode { get; set; }
@@ -17,7 +18,6 @@ namespace CuKhoaiCuSan.Model.Models
         [StringLength(250)]
         public string Name { get; set; }
 
-        [Key]
         public DateTime CreateDate { get; set; }
 
         [StringLength(150)]
@@ -55,5 +55,8 @@ namespace CuKhoaiCuSan.Model.Models
         public bool Status { get; set; }
 
         public virtual ItemCategory ItemCategory { get; set; }
+
+        [ForeignKey("ItemID")]
+        public virtual ICollection<ItemOption> ItemOption { get; set; }
     }
 }

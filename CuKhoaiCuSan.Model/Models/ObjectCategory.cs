@@ -14,7 +14,7 @@ namespace CuKhoaiCuSan.Model.Models
         {
             Object = new HashSet<Object1>();
         }
-
+        [Key]
         public Guid Id { get; set; }
 
         [StringLength(250)]

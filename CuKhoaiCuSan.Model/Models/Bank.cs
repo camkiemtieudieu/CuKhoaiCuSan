@@ -9,6 +9,7 @@ namespace CuKhoaiCuSan.Model.Models
     [Table("Bank")]
     public partial class Bank
     {
+        [Key]
         public Guid BankID { get; set; }
 
         [StringLength(150)]

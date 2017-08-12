@@ -14,7 +14,7 @@ namespace CuKhoaiCuSan.Model.Models
         {
             RoleDetail = new HashSet<RoleDetail>();
         }
-
+        [Key]
         public Guid RoleID { get; set; }
 
         [StringLength(50)]
