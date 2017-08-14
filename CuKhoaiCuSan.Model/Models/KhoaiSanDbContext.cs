@@ -43,6 +43,7 @@ namespace CuKhoaiCuSan.Model.Models
         public virtual DbSet<StockTransferDetail> StockTransferDetail { get; set; }
         public virtual DbSet<SYSAuditingLog> SYSAuditingLog { get; set; }
         public virtual DbSet<Transporter> Transporter { get; set; }
+        public virtual DbSet<Error> Errors { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
