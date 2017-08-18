@@ -56,6 +56,11 @@ namespace CuKhoaiCuSan.Data.Infrastructure
             var entity = dbSet.Find(id);
             dbSet.Remove(entity);
         }
+        public virtual void Delete(Guid id)
+        {
+            var entity = dbSet.Find(id);
+            dbSet.Remove(entity);
+        }
 
         public virtual void DeleteMulti(Expression<Func<T, bool>> where)
         {
@@ -65,6 +70,11 @@ namespace CuKhoaiCuSan.Data.Infrastructure
         }
 
         public virtual T GetSingleById(int id)
+        {
+            return dbSet.Find(id);
+        }
+
+        public virtual T GetSingleById(Guid id)
         {
             return dbSet.Find(id);
         }

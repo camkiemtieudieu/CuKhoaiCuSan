@@ -57,6 +57,7 @@ namespace CuKhoaiCuSan.Web.Infrastructure.Core
             try
             {
                 Error error = new Error();
+                error.ErrorID = new Guid();
                 error.CreatedDate = DateTime.Now;
                 error.Message = ex.Message;
                 error.StackTrace = ex.StackTrace;

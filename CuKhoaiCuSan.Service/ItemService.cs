@@ -1,6 +1,7 @@
 ﻿using CuKhoaiCuSan.Data.Infrastructure;
 using CuKhoaiCuSan.Data.Repositoris;
 using CuKhoaiCuSan.Model.Models;
+using System;
 using System.Collections.Generic;
 
 namespace CuKhoaiCuSan.Service
@@ -11,13 +12,13 @@ namespace CuKhoaiCuSan.Service
 
         void Update(Item item);
 
-        void Delete(int id);
+        void Delete(Guid id);
 
         IEnumerable<Item> GetAll();
 
         IEnumerable<Item> GetAllPaging(int page, int pagesize, out int totalRow);
 
-        Item GetByID(int id);
+        Item GetByID(Guid id);
 
         void SaveChanges();
     }
@@ -38,7 +39,7 @@ namespace CuKhoaiCuSan.Service
             _itemRepository.Add(item);
         }
 
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
             _itemRepository.Delete(id);
         }
@@ -53,7 +54,7 @@ namespace CuKhoaiCuSan.Service
             return _itemRepository.GetMultiPaging(x => x.Status, out totalRow, page, pagesize);
         }
 
-        public Item GetByID(int id)
+        public Item GetByID(Guid id)
         {
             return _itemRepository.GetSingleById(id);
         }

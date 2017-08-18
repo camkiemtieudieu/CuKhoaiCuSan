@@ -16,12 +16,15 @@ namespace CuKhoaiCuSan.Data.Infrastructure
         T Delete(T entity);
 
         void Delete(int id);
+        void Delete(Guid id);
 
         //Delete multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
 
         // Get an entity by int id
         T GetSingleById(int id);
+
+        T GetSingleById(Guid id);
 
         T GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null);
 

@@ -15,13 +15,13 @@ namespace CuKhoaiCuSan.Service
 
         void Update(ItemOption itemOption);
 
-        void Delete(int id);
+        void Delete(Guid id);
 
         IEnumerable<ItemOption> GetAll();
 
         IEnumerable<ItemOption> GetAllPaging(int page, int pagesize, out int totalRow);
 
-        ItemOption GetByID(int id);
+        ItemOption GetByID(Guid id);
 
         void SaveChanges();
     }
@@ -41,7 +41,7 @@ namespace CuKhoaiCuSan.Service
             _itemOptionRepository.Add(itemOption);
         }
 
-        public void Delete(int id)
+        public void Delete(Guid id)
         {
             _itemOptionRepository.Delete(id);
         }
@@ -56,7 +56,7 @@ namespace CuKhoaiCuSan.Service
             return _itemOptionRepository.GetMultiPaging(x => x.Status, out totalRow, page, pagesize);
         }
 
-        public ItemOption GetByID(int id)
+        public ItemOption GetByID(Guid id)
         {
             return _itemOptionRepository.GetSingleById(id);
         }
